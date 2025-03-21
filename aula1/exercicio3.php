@@ -1,12 +1,34 @@
 <?php
 
-$cid1 = array('nome' => 'Foz do Iguaçu', 'habitantes' => '250.000', 'area' => '500km2', 'altitude' => '145m', 'estado' => 'Paraná - PR');
-$cid2 = array('nome' => 'Cascavel', 'habitantes' => '300.00', 'area' => '420km2', 'altitude' => '320m', 'estado' => 'Paraná - PR');
-$cid3 = array('nome' => 'Chapecó', 'habitantes' => '240.000', 'area' => '120km2', 'altitude' => '620m', 'estado' => 'Santa Catarina - SC');
-$cid4 = array('nome' => 'Blumenau', 'habitantes' => '330.000', 'area' => '200km2', 'altitude' => '85m', 'estado' => 'Santa Catarina - SC');
-$cid5 = array('nome' => 'Curitiba', 'habitantes' => '1.500.000', 'area' => '300km2', 'altitude' => '850m', 'estado' => 'Paraná - PR');
+function desenhaLinha($nome, $habitantes, $area, $altitude, $estado) {
+    echo "<tr>";
+    echo "<td>" . $nome . "</td>";
+    echo "<td>" . $habitantes . "</td>";
+    echo "<td>" . $area . "km²</td>";
+    echo "<td>" . $altitude . "m</td>";
+    echo "<td>" . $estado . "</td>";
+    echo "</tr>";
+}
 
-$cidades = array($cid1,$cid2,$cid3,$cid4,$cid5);
+//Programa principal
+echo "<h1>Lista de cidades</h1>";
+
+echo "<table border='1'>";
+
+echo "<tr>";
+echo "<th>Nome</th>";
+echo "<th>Habitantes</th>";
+echo "<th>Área</th>";
+echo "<th>Altitude</th>";
+echo "<th>Estado</th>";
+echo "</tr>";
+
+//Cidades
+desenhaLinha("Foz do Iguaçu", 250000, 500, 145, "Paraná-PR");
+desenhaLinha("Cascavel", 300000, 420, 320, "Paraná-PR");
+desenhaLinha("Chapecó", 240000, 120, 620, "Santa Catarina-SC");
+desenhaLinha("Blumenau", 330000, 200, 85, "Santa Catarina-SC");
+desenhaLinha("Curitiba", 1500000, 300, 850, "Paraná-PR");
 
 
-
+echo "</table>";
