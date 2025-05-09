@@ -1,0 +1,59 @@
+body
+{
+    overflow: hidden;
+    background-color: gray;
+    block-size: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formularioPai
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario label
+{
+    color: aliceblue;
+}
+
+.formulario input
+{
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.formulario button
+{
+    border-radius: 10px;
+    padding: 5px;
+    inline-size: 100px;
+    block-size: 40px;
+}
+
+.carta
+{
+    background-color: aliceblue;
+    border: solid 1px; 
+    inline-size: 300px; 
+    margin-block-start: 20px;
+    border-radius:20px 20px;
+    padding: 10px;
+}
+
+.paicarta
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img
+{
+    inline-size: 100%; 
+    block-size: auto;
+    border-radius: 10px;
+}
